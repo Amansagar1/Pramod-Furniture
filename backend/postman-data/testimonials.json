@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Sarah Johnson",
+    "rating": 5,
+    "comment": "Amazing craftsmanship! Our custom bookshelf exceeded expectations.",
+    "project": "Custom Bookshelf"
+  },
+  {
+    "name": "Mike Chen",
+    "rating": 5,
+    "comment": "Professional service and incredible attention to detail.",
+    "project": "Kitchen Renovation"
+  },
+  {
+    "name": "Emily Davis",
+    "rating": 5,
+    "comment": "Transformed our old furniture into beautiful pieces. Highly recommended!",
+    "project": "Furniture Restoration"
+  }
+]

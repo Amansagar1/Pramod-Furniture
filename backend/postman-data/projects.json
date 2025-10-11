@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Custom Kitchen Cabinets",
+    "type": "Furniture",
+    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "title": "Oak Dining Table",
+    "type": "Furniture",
+    "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "title": "Vintage Door Restoration",
+    "type": "Restoration",
+    "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80"
+  }
+]
