@@ -26,7 +26,7 @@ const ContactPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
@@ -46,10 +46,10 @@ const ContactPage = () => {
   // Contact data
   const contactData = {
     info: {
-      phone: "+91 98765 43210",
+      phone: "+91 98016 52150",
       email: "hello@pramodcraftsmen.com",
       address: "123 Woodcraft Lane, Furniture District, Mumbai, Maharashtra 400001",
-      workshop: "Shop No. 45, Artisan Square, Andheri East, Mumbai 400069"
+      workshop: "Laluchak Angari, Ishakchak (Bhagalpur) Bihar 812001"
     },
     hours: {
       weekdays: "9:00 AM - 7:00 PM",
@@ -105,7 +105,7 @@ const ContactPage = () => {
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Let&apos;s Create Together</h1>
           <p className="text-xl md:text-2xl text-sky-100 max-w-3xl mx-auto mb-8">
-            Ready to bring your furniture vision to life? Get in touch for a consultation 
+            Ready to bring your furniture vision to life? Get in touch for a consultation
             and let&apos;s discuss your dream project.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -183,7 +183,7 @@ const ContactPage = () => {
                       onChange={handleInputChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all duration-300"
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 98016 52150"
                     />
                   </div>
                   <div>
@@ -291,7 +291,7 @@ const ContactPage = () => {
               {/* Contact Details */}
               <div className="bg-white rounded-2xl shadow-lg p-8">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6">Get In Touch</h3>
-                
+
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-sky-100 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -421,11 +421,11 @@ const ContactPage = () => {
             <div>
               <h2 className="text-4xl font-bold text-gray-800 mb-6">Visit Our Workshop</h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Come see our craftsmanship in action! Our workshop in Andheri East is where 
-                the magic happens. Schedule a visit to discuss your project in person and see 
+                Come see our craftsmanship in action! Our workshop in Andheri East is where
+                the magic happens. Schedule a visit to discuss your project in person and see
                 samples of our work.
               </p>
-              
+
               <div className="space-y-4">
                 <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm">
                   <div className="w-10 h-10 bg-sky-100 rounded-lg flex items-center justify-center">
@@ -487,7 +487,7 @@ const ContactPage = () => {
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Don&apos;t wait to create the furniture of your dreams. Contact us today for a 
+            Don&apos;t wait to create the furniture of your dreams. Contact us today for a
             free consultation and let&apos;s bring your vision to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

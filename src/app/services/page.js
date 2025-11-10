@@ -277,8 +277,8 @@ const ServicesPage = () => {
   };
 
   // Filter services based on active tab
-  const filteredServices = activeTab === "all" 
-    ? servicesData.services 
+  const filteredServices = activeTab === "all"
+    ? servicesData.services
     : servicesData.services.filter(service => service.category === activeTab);
 
   // Service Card Component
@@ -286,7 +286,7 @@ const ServicesPage = () => {
     const [imageLoaded, setImageLoaded] = useState(false);
 
     return (
-      <div 
+      <div
         className="group cursor-pointer bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border border-gray-100"
         onClick={() => setSelectedService(service)}
       >
@@ -294,9 +294,8 @@ const ServicesPage = () => {
           <img
             src={service.images[0]}
             alt={service.title}
-            className={`w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110 ${
-              imageLoaded ? 'opacity-100' : 'opacity-0'
-            }`}
+            className={`w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110 ${imageLoaded ? 'opacity-100' : 'opacity-0'
+              }`}
             onLoad={() => setImageLoaded(true)}
             onError={(e) => {
               e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f59e0b'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='16' fill='white'%3E" + service.title + "%3C/text%3E%3C/svg%3E";
@@ -308,7 +307,7 @@ const ServicesPage = () => {
             </div>
           )}
           <div className="absolute inset-0 bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300" />
-          
+
           {/* Featured Badge */}
           {service.featured && (
             <div className="absolute top-4 left-4">
@@ -317,13 +316,13 @@ const ServicesPage = () => {
               </span>
             </div>
           )}
-          
+
           {/* Service Icon */}
           <div className="absolute top-4 right-4 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg">
             <span className="text-xl">{service.icon}</span>
           </div>
         </div>
-        
+
         <div className="p-6">
           <h3 className="text-xl font-bold text-gray-800 group-hover:text-sky-600 transition-colors mb-3">
             {service.title}
@@ -331,7 +330,7 @@ const ServicesPage = () => {
           <p className="text-gray-600 mb-4 line-clamp-2">
             {service.description}
           </p>
-          
+
           <div className="flex items-center justify-between mb-4">
             <div>
               <span className="text-sky-600 font-bold text-lg">{service.startingPrice}</span>
@@ -339,7 +338,7 @@ const ServicesPage = () => {
             </div>
             <span className="text-gray-500 text-sm">{service.duration}</span>
           </div>
-          
+
           <button className="w-full bg-sky-100 hover:bg-sky-200 text-sky-700 py-3 rounded-lg font-semibold transition-colors group-hover:bg-sky-600 group-hover:text-white">
             Learn More →
           </button>
@@ -375,7 +374,7 @@ const ServicesPage = () => {
                   <p className="text-gray-600">{service.description}</p>
                 </div>
               </div>
-              
+
               <div className="flex flex-wrap gap-4">
                 <div className="px-4 py-2 bg-sky-100 text-sky-700 rounded-full font-semibold">
                   Starting at {service.startingPrice}
@@ -461,7 +460,7 @@ const ServicesPage = () => {
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Services</h1>
           <p className="text-xl md:text-2xl text-sky-100 max-w-3xl mx-auto mb-8">
-            From custom furniture creation to expert restoration, we offer comprehensive 
+            From custom furniture creation to expert restoration, we offer comprehensive
             woodcraft services tailored to your unique needs and vision.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -486,11 +485,10 @@ const ServicesPage = () => {
               <button
                 key={category.key}
                 onClick={() => setActiveTab(category.key)}
-                className={`flex items-center gap-3 px-6 py-4 rounded-2xl font-semibold transition-all duration-300 ${
-                  activeTab === category.key
+                className={`flex items-center gap-3 px-6 py-4 rounded-2xl font-semibold transition-all duration-300 ${activeTab === category.key
                     ? 'bg-sky-600 text-white shadow-lg'
                     : 'bg-gray-100 text-gray-600 hover:bg-sky-100 hover:text-sky-700'
-                }`}
+                  }`}
               >
                 <span className="text-xl">{category.icon}</span>
                 {category.label}
@@ -519,10 +517,10 @@ const ServicesPage = () => {
             <>
               <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                  {activeTab === 'all' ? 'All Services' : 
-                   activeTab === 'furniture' ? 'Custom Furniture' :
-                   activeTab === 'restoration' ? 'Restoration Services' :
-                   'Consultation Services'}
+                  {activeTab === 'all' ? 'All Services' :
+                    activeTab === 'furniture' ? 'Custom Furniture' :
+                      activeTab === 'restoration' ? 'Restoration Services' :
+                        'Consultation Services'}
                 </h2>
                 <p className="text-gray-600 max-w-2xl mx-auto">
                   {filteredServices.length} service{filteredServices.length !== 1 ? 's' : ''} to bring your vision to life
@@ -585,7 +583,7 @@ const ServicesPage = () => {
               Book Consultation
             </button>
             <button className="border-2 border-white hover:bg-white hover:text-sky-600 px-8 py-4 rounded-full font-semibold transition-all duration-300">
-              Call Us: +91 98765 43210
+              Call Us: +91 98016 52150
             </button>
           </div>
         </div>

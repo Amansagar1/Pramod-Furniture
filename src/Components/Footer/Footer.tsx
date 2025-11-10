@@ -13,13 +13,13 @@ const Footer = () => {
               <span className="font-bold text-xl">Pramod Furniture</span>
             </Link>
             <p className="text-gray-300 mb-4 max-w-md">
-              Professional carpentry services with 15 years of experience in custom woodwork, 
+              Professional carpentry services with 15 years of experience in custom woodwork,
               furniture making, and home renovations. Quality craftsmanship guaranteed.
             </p>
             <div className="flex flex-col space-y-2">
               <div className="flex items-center space-x-2 text-gray-300">
                 <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 9801652150</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-300">
                 <Mail className="h-4 w-4" />
@@ -27,7 +27,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2 text-gray-300">
                 <MapPin className="h-4 w-4" />
-                <span>123 Workshop St, Woodville</span>
+                <span>Laluchak Angari, Ishakchak (Bhagalpur) Bihar 812001</span>
               </div>
             </div>
           </div>

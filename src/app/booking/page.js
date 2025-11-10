@@ -37,7 +37,7 @@ const BookConsultationPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
@@ -172,7 +172,7 @@ const BookConsultationPage = () => {
 
   // Available time slots
   const timeSlots = [
-    "09:00 AM", "10:00 AM", "11:00 AM", "12:00 PM", 
+    "09:00 AM", "10:00 AM", "11:00 AM", "12:00 PM",
     "02:00 PM", "03:00 PM", "04:00 PM", "05:00 PM"
   ];
 
@@ -194,7 +194,7 @@ const BookConsultationPage = () => {
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Book a Consultation</h1>
           <p className="text-xl md:text-2xl text-sky-100 max-w-3xl mx-auto mb-8">
-            Start your furniture journey with expert guidance. Choose the consultation 
+            Start your furniture journey with expert guidance. Choose the consultation
             that best fits your needs and let's bring your vision to life.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -223,13 +223,12 @@ const BookConsultationPage = () => {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {consultationData.types.map((type) => (
-              <div 
+              <div
                 key={type.id}
-                className={`relative bg-white rounded-2xl shadow-lg border-2 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 ${
-                  formData.consultationType === type.id 
-                    ? 'border-sky-500 ring-2 ring-sky-200' 
+                className={`relative bg-white rounded-2xl shadow-lg border-2 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 ${formData.consultationType === type.id
+                    ? 'border-sky-500 ring-2 ring-sky-200'
                     : 'border-gray-200 hover:border-sky-300'
-                }`}
+                  }`}
               >
                 {/* Popular Badge */}
                 {type.id === "virtual" && (
@@ -263,7 +262,7 @@ const BookConsultationPage = () => {
                         ))}
                       </ul>
                     </div>
-                    
+
                     <div>
                       <h4 className="font-semibold text-gray-800 mb-2">Best For:</h4>
                       <ul className="space-y-1">
@@ -281,11 +280,10 @@ const BookConsultationPage = () => {
                       setFormData(prev => ({ ...prev, consultationType: type.id }));
                       nextStep();
                     }}
-                    className={`w-full py-3 rounded-lg font-semibold transition-all duration-300 ${
-                      formData.consultationType === type.id
+                    className={`w-full py-3 rounded-lg font-semibold transition-all duration-300 ${formData.consultationType === type.id
                         ? 'bg-sky-600 text-white hover:bg-sky-700'
                         : 'bg-sky-100 text-sky-700 hover:bg-sky-200'
-                    }`}
+                      }`}
                   >
                     {formData.consultationType === type.id ? "Selected" : "Choose This Option"}
                   </button>
@@ -324,7 +322,7 @@ const BookConsultationPage = () => {
                   </div>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div 
+                  <div
                     className="bg-sky-600 h-2 rounded-full transition-all duration-500"
                     style={{ width: `${((currentStep - 1) / 3) * 100}%` }}
                   ></div>
@@ -337,7 +335,7 @@ const BookConsultationPage = () => {
                     <div className="text-6xl mb-6">🎉</div>
                     <h3 className="text-3xl font-bold text-gray-800 mb-4">Consultation Booked Successfully!</h3>
                     <p className="text-gray-600 mb-8 max-w-md mx-auto">
-                      Thank you for booking a consultation with Pramod Furniture Craftsmen. 
+                      Thank you for booking a consultation with Pramod Furniture Craftsmen.
                       We've sent a confirmation email with all the details and next steps.
                     </p>
                     <div className="bg-sky-50 rounded-xl p-6 mb-8 max-w-md mx-auto">
@@ -349,7 +347,7 @@ const BookConsultationPage = () => {
                         <li>• We'll call you at your scheduled time</li>
                       </ul>
                     </div>
-                    <button 
+                    <button
                       onClick={() => {
                         setSubmitStatus(null);
                         setCurrentStep(1);
@@ -411,7 +409,7 @@ const BookConsultationPage = () => {
                               onChange={handleInputChange}
                               required
                               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-500 focus:border-transparent transition-all duration-300"
-                              placeholder="+91 98765 43210"
+                              placeholder="+91 98016 52150"
                             />
                           </div>
                           <div>
@@ -494,10 +492,10 @@ const BookConsultationPage = () => {
                               <option value="">Select a date</option>
                               {getNextDays().map((date) => (
                                 <option key={date} value={date}>
-                                  {new Date(date).toLocaleDateString('en-IN', { 
-                                    weekday: 'short', 
-                                    day: 'numeric', 
-                                    month: 'long' 
+                                  {new Date(date).toLocaleDateString('en-IN', {
+                                    weekday: 'short',
+                                    day: 'numeric',
+                                    month: 'long'
                                   })}
                                 </option>
                               ))}
